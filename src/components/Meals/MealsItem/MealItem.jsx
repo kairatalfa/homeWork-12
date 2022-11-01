@@ -1,5 +1,6 @@
 import { useState } from "react";
 import classes from "./MealItem.module.css";
+import MealItemForm from "./MealtemForm";
 export function MealItem(props) {
   const price = props.price.toFixed(2);
   const [state, setState] = useState(0);
@@ -36,6 +37,9 @@ export function MealItem(props) {
         <div>
           <p className={classes.total}>{Number(total).toFixed(2)}</p>
         </div>
+      </div>
+      <div>
+        <MealItemForm id={props.id}/>
       </div>
     </li>
   );

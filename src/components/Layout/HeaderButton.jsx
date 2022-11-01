@@ -7,7 +7,7 @@ export function HeaderButton() {
         <CardIcon />
       </span>
       <span>Your Card</span>
-      <span></span>
+      <span className={classes.badge}>3</span>
     </button>
   );
 }
